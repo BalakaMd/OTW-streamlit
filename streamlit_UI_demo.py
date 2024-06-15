@@ -1,9 +1,6 @@
 import streamlit as st
 import requests
 import time
-import uuid
-
-chat_uuid = "StreamLit_test#" + str(uuid.uuid4())
 
 st.set_page_config(page_title="OTW-AI-Chatbot")
 st.title("💬 OTW-AI-Chatbot")
@@ -28,7 +25,7 @@ def response_generator(message):
 def get_answer(question):
     API_URL = "http://64.226.69.25/api/ask/"
     HEADERS = {
-        "ChatID": chat_uuid,
+        "ChatID": "Streamlit-Chatbot_test",
         "Authorization": "254eca5a-84e1-4526-9a4c-a21343019b3b"
     }
     payload = {
