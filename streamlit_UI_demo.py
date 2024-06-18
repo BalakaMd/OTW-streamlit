@@ -25,10 +25,10 @@ def response_generator(message):
 def get_answer(question):
     API_URL = "http://64.226.69.25/api/ask/"
     HEADERS = {
-        "ChatID": "Streamlit-Chatbot_test",
         "Authorization": "254eca5a-84e1-4526-9a4c-a21343019b3b"
     }
     payload = {
+        "ChatID": "Streamlit-Chatbot_test",
         "question": question,
         "customer_id": "0"
     }
